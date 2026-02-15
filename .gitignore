@@ -1,0 +1,11 @@
+*.sqlite3
+*.png
+*.jpg
+*.jpeg
+*.log
+*.pyc
+__pycache__/
+*.env
+*.DS_Store
+.vscode/
+.idea/
