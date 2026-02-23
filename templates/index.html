@@ -1,1 +1,42 @@
-<marquee>{{ request.user }} - {{ message }}</marquee>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+
+    <style>
+        .contenedor {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .texto-movimiento {
+            display: inline-block;
+            padding-left: 100%;
+            animation: mover 10s linear infinite;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        @keyframes mover {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="texto-movimiento">
+            {{ message }}
+        </div>
+    </div>
+
+</body>
+</html>
